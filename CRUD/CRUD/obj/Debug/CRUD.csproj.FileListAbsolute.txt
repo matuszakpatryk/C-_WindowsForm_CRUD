@@ -7,4 +7,3 @@ D:\Studia\C#\CRUD\CRUD\CRUD\obj\Debug\CRUD.Properties.Resources.resources
 D:\Studia\C#\CRUD\CRUD\CRUD\obj\Debug\CRUD.csproj.GenerateResource.Cache
 D:\Studia\C#\CRUD\CRUD\CRUD\obj\Debug\CRUD.exe
 D:\Studia\C#\CRUD\CRUD\CRUD\obj\Debug\CRUD.pdb
-D:\Studia\C#\CRUD\CRUD\CRUD\obj\Debug\CRUD.Autor.resources

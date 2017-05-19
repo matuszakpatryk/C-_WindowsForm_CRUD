@@ -15,31 +15,31 @@ namespace CRUD
         public Main()
         {
             InitializeComponent();
-            Autor autor = new Autor();
             String today = DateTime.Today.ToString("dd-MM-yyyy");
-            label4.Text = today;
-            autor.setLabelDate2(today);
-        }
-
-        private void kliencieToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void oAutorzeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Autor autorForm = new Autor();
-            autorForm.Show();
+            //label4.Text = today;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.sprzedaz' . Możesz go przenieść lub usunąć.
+            this.sprzedazTableAdapter.Fill(this.pmatuszakDataSet.sprzedaz);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.produkt' . Możesz go przenieść lub usunąć.
+            this.produktTableAdapter.Fill(this.pmatuszakDataSet.produkt);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.pracownik' . Możesz go przenieść lub usunąć.
+            this.pracownikTableAdapter.Fill(this.pmatuszakDataSet.pracownik);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.klient' . Możesz go przenieść lub usunąć.
+            this.klientTableAdapter.Fill(this.pmatuszakDataSet.klient);
 
+        }
+
+        private void btnTak_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnNie_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
         }
     }
 }
