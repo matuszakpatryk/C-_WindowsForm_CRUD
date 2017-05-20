@@ -21,6 +21,8 @@ namespace CRUD
 
         private void Main_Load(object sender, EventArgs e)
         {
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.koszyk' . Możesz go przenieść lub usunąć.
+            this.koszykTableAdapter.Fill(this.pmatuszakDataSet.koszyk);
             // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.sprzedaz' . Możesz go przenieść lub usunąć.
             this.sprzedazTableAdapter.Fill(this.pmatuszakDataSet.sprzedaz);
             // TODO: Ten wiersz kodu wczytuje dane do tabeli 'pmatuszakDataSet.produkt' . Możesz go przenieść lub usunąć.
@@ -40,6 +42,11 @@ namespace CRUD
         private void btnNie_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(1);
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
